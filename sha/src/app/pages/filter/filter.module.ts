@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ReportPageRoutingModule } from './report-routing.module';
+import { FilterPageRoutingModule } from './filter-routing.module';
 
-import { ReportPage } from './report.page';
-
+import { FilterPage } from './filter.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReportPageRoutingModule
+    FilterPageRoutingModule
   ],
-  declarations: [ReportPage]
+  declarations: [FilterPage]
 })
-export class ReportPageModule {}
+export class FilterPageModule {}

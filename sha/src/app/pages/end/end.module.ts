@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ReportPageRoutingModule } from './report-routing.module';
+import { EndPageRoutingModule } from './end-routing.module';
 
-import { ReportPage } from './report.page';
-
+import { EndPage } from './end.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReportPageRoutingModule
+    EndPageRoutingModule
   ],
-  declarations: [ReportPage]
+  declarations: [EndPage]
 })
-export class ReportPageModule {}
+export class EndPageModule {}

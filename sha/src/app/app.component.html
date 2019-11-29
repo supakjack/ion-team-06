@@ -4,15 +4,17 @@
 
       <ion-grid>
         <ion-row>
-          <ion-col size="2">
-            <ion-avatar class="header_icon">
+          <ion-col>
+            <ion-avatar class="header_icon" style="max-width: 30px; max-height: 25px;"  >
               <img src="./../assets/icon/team-06.PNG">
             </ion-avatar>
           </ion-col>
-          <ion-col size="10" class="header_title">
-            <ion-title>
-              <p>School Admission System</p>
+          <ion-col>
+            <ion-title class="sha_title">
+              School Admission System
             </ion-title>
+          </ion-col>
+          <ion-col>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -20,24 +22,45 @@
     </ion-toolbar>
   </ion-header>
 
-  
-  <ion-router-outlet>
-  </ion-router-outlet>
+  <!--  -->
+  <ion-content>
+    <ion-router-outlet>
+    </ion-router-outlet>
+  </ion-content>
+  <!--  -->
 
   <ion-footer>
     <ion-toolbar>
-
       <ion-buttons>
-        <ion-button class="f_b">
-          <ion-icon name="volume-high"></ion-icon>
-        </ion-button>
-        <ion-button>
-          <ion-icon name="home"></ion-icon>
-        </ion-button>
-        <ion-button routerLink="/report">
-          <ion-icon name="stats"></ion-icon>
-        </ion-button>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="3">
+
+            </ion-col>
+            <ion-col size="2">
+              <ion-button class="f_b">
+                <ion-icon name="volume-high"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col size="2">
+              <ion-button>
+                <ion-icon name="home"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col size="2">
+              <ion-button routerLink="/report">
+                <ion-icon name="stats"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col size="3">
+
+            </ion-col>
+
+
+          </ion-row>
+        </ion-grid>
       </ion-buttons>
+
 
     </ion-toolbar>
   </ion-footer>

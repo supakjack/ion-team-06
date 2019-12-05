@@ -12,17 +12,18 @@ export class ReportPage implements OnInit {
 
   ngOnInit() {
     this.mycharts();
+    this.barcharts();
   }
 
   mycharts() {
-    var ctx = (<any>document.getElementById('canvas-chart')).getContext('2d');
+    var ctx = (<any>document.getElementById('canvas-chart-pie')).getContext('2d');
     var chart = new Chart(ctx, {
       // The type of chart we want to create
       type: 'pie',
 
       // The data for our dataset
       data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["หลักสูตรนานาชาติ", "หลักสูตรสองภาษา", "หลักสูตรภาษอังกฤษ", "หลักสูตรภาษไทย",],
         datasets: [{
           label: "My First dataset",
           backgroundColor: [
@@ -30,22 +31,85 @@ export class ReportPage implements OnInit {
             'rgba(54, 162, 235, 0.2)',
             'rgba(255, 206, 86, 0.2)',
             'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
           ],
           borderColor: [
             'rgba(255,99,132,1)',
             'rgba(54, 162, 235, 1)',
             'rgba(255, 206, 86, 1)',
             'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
           ],
-          data: [0, 10, 5, 2, 20, 30, 45],
+          data: [42.1, 26.3, 21.1, 10.5,],
           borderWidth: 1
         }]
-      }
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: 'bottom',
+          labels: {
+            fontColor: "black",
+            boxWidth: 20,
+            padding: 20
+          }
+        }
+      },
+
+
     });
+  }
+
+  barcharts() {
+    var ctx = (<any>document.getElementById('canvas-chart-bar')).getContext('2d');
+    var barChartData = {
+      labels: [
+        "หลักสูตรภาษไทย",
+        "หลักสูตรภาษอังกฤษ",
+        "หลักสูตรสองภาษา",
+        "หลักสูตรนานาชาติ",
+      ],
+      datasets: [
+        {
+          label: "จำนวนสมัคร",
+          backgroundColor: "pink",
+          borderColor: "red",
+          borderWidth: 1,
+          data: [55, 35, 70, 40,]
+        },
+        {
+          label: "จำนวนรับสมัคร",
+          backgroundColor: "lightblue",
+          borderColor: "blue",
+          borderWidth: 1,
+          data: [45, 15, 65, 42,]
+        },
+      ]
+    };
+
+    var chartOptions = {
+      responsive: true,
+      legend: {
+        position: "top"
+      },
+      title: {
+        display: true,
+        text: "กราฟแท่งแสดงจำนวนนักเรียนชั้นเตรียมอนุบาลทุกหลักสูตรในปีการศึกษา 2561"
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+
+    var chart = new Chart(ctx, {
+      type: "bar",
+      data: barChartData,
+      options: chartOptions
+    })
+    // ctx.height = 1500;
+
   }
 
 }

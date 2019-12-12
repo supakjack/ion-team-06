@@ -53,6 +53,7 @@ export class ReportPage implements OnInit {
           }
         }
       },
+      
 
 
     });
@@ -96,8 +97,11 @@ export class ReportPage implements OnInit {
       },
       scales: {
         yAxes: [{
+          display: true,
           ticks: {
-            beginAtZero: true
+            min: 0,
+            max: 80,
+            stepSize: 40
           }
         }]
       }
@@ -106,7 +110,7 @@ export class ReportPage implements OnInit {
     var chart = new Chart(ctx, {
       type: "bar",
       data: barChartData,
-      options: chartOptions
+      options: chartOptions,
     })
     // ctx.height = 1500;
 

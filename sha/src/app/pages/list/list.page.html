@@ -1,9 +1,115 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>list</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="startp">
+          <ion-button>
+            <ion-icon name="add-circle"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col class="centerp">
+          <p>รายการใบสมัครเรียน</p>
+        </ion-col>
+        <ion-col class="endp">
+          <ion-col class="endp">
+            <label class="item item-input item-select">
+              <div class="input-label"></div>
+              <select>
+                <option selected>ทั้งหมด</option>
+                <option>ในเขตพื้นที่</option>
+                <option>นอกเขตพื้นที่</option>
+              </select>
+            </label>
+          </ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
 
+  <ion-list>
+    <!-- ?********ion-item1******** -->
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <ion-icon class="centerp" name="contact"></ion-icon>
+          <p class="centerp" size="">ด.ญ.สวย ตลอดกาล อายุ : 3 ปี อาศัย : ในพื้นที่</p>
+        </ion-row>
+      </ion-label>
+      <ion-button color="success">
+        <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="create" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <!-- ?********ion-item1******** -->
+
+    <!-- ?********ion-item2******** -->
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <ion-icon class="centerp" name="contact"></ion-icon>
+          <p class="centerp" size="">ด.ช.สมาร์ท มาดแมน อายุ : 3 ปี อาศัย : ในพื้นที่</p>
+        </ion-row>
+      </ion-label>
+      <ion-button color="success">
+        <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="create" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <!-- ?********ion-item2******** -->
+
+    <!-- ?********ion-item3******** -->
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <ion-icon class="centerp" name="contact"></ion-icon>
+          <p class="centerp" size="">ด.ญ.สมร สอนรัก อายุ : 4 ปี อาศัย : ในพื้นที่</p>
+        </ion-row>
+      </ion-label>
+      <ion-button color="success">
+        <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="create" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <!-- ?********ion-item3******** -->
+
+    <!-- ?********ion-item4******** -->
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <ion-icon class="centerp" name="contact"></ion-icon>
+          <p class="centerp" size="">ด.ช.แสบ สุดสนุก อายุ : 3 ปี อาศัย : ในพื้นที่</p>
+        </ion-row>
+      </ion-label>
+      <ion-button color="success">
+        <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="create" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <!-- ?********ion-item4******** -->
+
+    <!-- ?********ion-item5******** -->
+    <ion-item>
+      <ion-label>
+        <ion-row>
+          <ion-icon class="centerp" name="contact"></ion-icon>
+          <p class="centerp" size="">ด.ญ.ยิ่งลักษณ์ ชินละ สอนรัก อายุ : 4 ปี อาศัย : ในพื้นที่</p>
+        </ion-row>
+      </ion-label>
+      <ion-button color="success">
+        <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="create" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <!-- ?********ion-item5******** -->
+  </ion-list>
 </ion-content>

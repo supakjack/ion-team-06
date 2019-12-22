@@ -1,23 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>เมนู</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        ion-col
+      <ion-col size="6">
+        <ion-button routerLink="/report" color="primary"
+          >แสดงสถิติตามหลักสูตร</ion-button
+        >
       </ion-col>
-      <ion-col>
-        ion-col
+      <ion-col size="6">
+        <ion-button routerLink="/setting" color="primary"
+          >การจัดการเงื่อนไข</ion-button
+        >
       </ion-col>
-      <ion-col>
-        ion-col
+      <ion-col size="6">
+        <ion-button routerLink="/export" color="primary">PDF ใบสมัครเรียน</ion-button>
       </ion-col>
-      <ion-col>
-        ion-col
+      <ion-col size="6">
+        <ion-button routerLink="/filter" color="primary"
+          >กรอกเงื่อนไขการรับสมัคร</ion-button
+        >
+      </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink="/list" color="primary">แสดงรายการใบสมัคร</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink="/form" color="primary">การจัดการใบสมัคร</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink="/reg" color="primary"
+          >กรอกข้อมูลการสมัคร 1</ion-button
+        >
+      </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink="/start" color="primary"
+          >กรอกข้อมูลการสมัคร 2</ion-button
+        >
+      </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink="/end" color="primary">กรอกข้อมูลการสมัคร</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button routerLink="/append" color="primary"
+          >ยืนยันผู้มีสิทธิเข้าเรียน</ion-button
+        >
       </ion-col>
     </ion-row>
   </ion-grid>
